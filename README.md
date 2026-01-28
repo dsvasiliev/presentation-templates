@@ -50,3 +50,5 @@ A full-stack web application for sharing and downloading PowerPoint presentation
 - *Pagination*: Limits data loading for large datasets
 - *Image Optimization*: Resized and compressed cover images
 - *Caching Strategy*: Browser caching for static assets
+
+**:disappointed: Unfortunately, the original database was lost due to a system reinstall**
