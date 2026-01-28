@@ -1,5 +1,4 @@
 # Presentation Templates Platform :rocket:
-___
 
 A full-stack web application for sharing and downloading PowerPoint presentation templates. Users can create categories, upload their templates, download others' work, and leave reviews with ratings.
 
@@ -33,16 +32,19 @@ A full-stack web application for sharing and downloading PowerPoint presentation
 - *categories* - Template categories with descriptions and covers
 - *templates* - Presentation templates with metadata
 - *reviews_{template_id}* - Dynamic review tables for each template
+
 **Key Relationships**
 - Users → Templates (One-to-Many)
 - Categories → Templates (One-to-Many)
 - Templates → Reviews (One-to-Many)
+
 **:closed_lock_with_key: Security Features**
 - *SQL Injection Protection*: Prepared statements and parameterized queries
 - *Session Management*: Secure session handling with cookies
 - *File Upload Validation*: Format and size restrictions for uploaded files
 - *Access Control*: Route protection for authenticated users only
 - *XSS Prevention*: Output escaping for user-generated content
+
 **:chart_with_upwards_trend: Performance Optimizations**
 - *Database Indexing*: Optimized query performance on frequently accessed columns
 - *Pagination*: Limits data loading for large datasets
