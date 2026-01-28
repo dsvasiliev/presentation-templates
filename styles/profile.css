@@ -1,0 +1,82 @@
+#profile_main_icon {
+    margin: 0 auto 15px auto;
+    display: block;
+}
+
+.user_function {
+    border-radius: 7px;
+    border: 2px solid #A8A8A7;
+    margin-top: 20px;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.user_function > svg {
+    animation-duration: 0.4s;
+}
+
+.user_function:hover > svg {
+    animation-name: next;
+}
+
+.user_function.green {
+    border-color: #3D917C;
+    margin-top: 40px;
+}
+
+.user_function.pink {
+    border-color: #E2B392;
+}
+
+.user_function_top {
+   display: flex;
+   align-items: center;
+}
+
+.user_function_top > h4 {
+   margin: 0 0 0 15px;
+}
+
+.user_function_descroption {
+    margin: 10px 15px 0 39px;
+}
+
+.user_function_top > h4, .user_function_descroption {
+    text-decoration: none;
+}
+
+@keyframes next {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(5px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+/* Под мобильные устройства */
+@media (max-width: 700px) {
+    .user_function {
+       display: block;
+    }
+
+    .user_function_top {
+        justify-content: center;
+    }
+  
+    .user_function_descroption {
+        margin: 10px 0 0 0;
+    }
+
+    .user_function > svg {
+        display: block;
+        margin:  10px auto 0 auto;
+    }
+}

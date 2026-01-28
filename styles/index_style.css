@@ -1,0 +1,290 @@
+/* Максимальная ширина контента */
+.white_block, .colored_block > div {
+    max-width: 1200px;
+}
+
+/* ТРИ БЛОКА В РЯД */
+.three_blocks {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.three_blocks > div {
+    margin-top: 70px;
+    display: inline-block;
+    width: calc(100%/3);
+}
+
+.three_blocks > div > svg {
+    display: block;
+    margin: 0 auto;
+}
+
+/* ДВА БЛОКА В РЯД */
+.two_blocks {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.two_blocks > div:first-of-type > img{
+    display: block;
+    border-radius: 50%;
+    transition: transform 0.8s;
+    margin-right: 125px;
+}
+
+.two_blocks > div:first-of-type > img:hover {
+    transform: rotate(-70deg);
+}
+
+.two_blocks > div > h4:first-of-type {
+    margin-top: 0;
+}
+
+/* ЦВЕТНЫЕ БЛОКИ */
+.colored_block {
+    margin-top: 60px;
+    padding: 80px 0 100px 0;
+    background-image: url("../Images/System/Noise.png");
+}
+
+.colored_block.pink {
+   background-color: #FAECE1;
+}
+
+.colored_block > div {
+    padding: 0 25px;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.colored_block.green {
+    background-color: #DBE6E0;
+}
+
+#project_news {
+    padding-bottom: 0px;
+}
+
+/* БЕЛЫЕ БЛОКИ */
+.white_block {
+    margin: 70px auto 0 auto;
+    width: 80%;
+    padding: 0 50px;
+}
+
+/* ВЕРХНЯЯ ЧАСТЬ */
+/* Верхний зелёный фон */
+#main_page_top {
+    height: 100vh;
+    background-color: #DBE6E0;
+    background-image: url("../Images/System/Noise.png");
+}
+
+#main_content {
+    position: relative;
+    top: 50vh;
+    transform: translateY(-50%);
+    max-width: 80%;
+    padding: 0 50px;
+    margin: 0 auto;
+}
+
+.example_block {
+    margin-top: 300px;
+}
+
+.example_block > p:first-of-type {
+    display: inline-block;
+}
+
+.example_block > a:last-of-type {
+    margin-top: 60px;
+}
+
+#for_disainers {
+    padding: 300px 0;
+}
+
+/* Значок "Вниз" */
+#down_scroll {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-14px);
+    height: 35px;
+}
+
+#down_scroll > path:last-of-type {
+    transition: 0.2s;
+    will-change: transform;
+}
+
+#down_scroll:hover > path:last-of-type{
+    transform: translateY(4px);
+}
+
+/* Изображение на заднем фоне */
+#background_imagine > img {
+    position: absolute;
+    border-radius: 50%;
+    transition: transform 0.4s, opacity 0.4s;
+}
+
+/* Пользователь */
+#background_imagine > img:nth-child(1) {
+    transform: rotate(-15deg);
+    left: 15%;
+    top: 15vh;
+}
+
+#background_imagine > img:nth-child(1):hover {
+    transform: rotate(5deg);
+}
+
+/* Плюс */
+#background_imagine > img:nth-child(2) {
+    transform: rotate(15deg);
+    left: 60%;
+    top: 20vh;
+}
+
+#background_imagine > img:nth-child(2):hover {
+    transform: rotate(-5deg);
+}
+
+/* Выгрузить */
+#background_imagine > img:nth-child(3) {
+    transform: rotate(15deg);
+    left: 20%;
+    top: 70vh;
+}
+
+#background_imagine > img:nth-child(3):hover {
+    transform: rotate(-5deg);
+}
+
+/* Скачать */
+#background_imagine > img:nth-child(4) {
+    transform: rotate(-15deg);
+    left: 65%;
+    top: 65vh;
+}
+
+#background_imagine > img:nth-child(4):hover {
+    transform: rotate(5deg);
+}
+
+/* СТРЕЛКИ */
+.arrow {
+    display: block;
+    position: absolute
+}
+
+#arrow_1 {
+    left: 20%;
+    transform: translateY(-110px);
+}
+
+#arrow_2 {
+    left: 70%;
+    transform: translateY(30px);
+}
+
+#arrow_3 {
+    left: 75%;
+    transform: translateY(-110px);
+}
+
+/* Изменение основных фигур */
+@media(max-width: 1000px) {
+    /* Пользователь */
+    #background_imagine > img:nth-child(1) {
+        height: 107px;
+        left: 15%;
+        top: 16vh;
+    }
+
+    /* Плюс */
+    #background_imagine > img:nth-child(2) {
+        height: 70px;
+        left: 60%;
+        top: 12vh;
+    }
+
+    /* Выгрузить */
+    #background_imagine > img:nth-child(3) {
+        height: 100px;
+        top: 72vh;
+        left: 15%;
+    }
+
+    /* Скачать */
+    #background_imagine > img:nth-child(4) {
+        height: 110px;
+        top: 78vh;
+        left: auto;
+        right: 10%;
+    }
+
+    #arrow_1 {
+        left: 5%;
+    }
+
+    #arrow_3 {
+        left: auto;
+        right: 5%;
+    }
+}
+
+/* Мобильные устройства */
+@media(max-width: 700px) {
+    .three_blocks, .two_blocks {
+        display: block;
+    }
+
+    .three_blocks > div {
+        margin-top: 18px;
+        display: block;
+        width: 100%;
+    }
+    
+    .three_blocks > div > svg:first-of-type {
+        margin-top: 34px;
+    }
+
+    /* Главный логотип, часы */
+    .two_blocks > div:first-of-type > img {
+        height: 140px;
+        margin: 0 auto 45px auto;
+    }
+  
+    #down_scroll:hover > path:last-of-type{
+        transform: translateY(0px);
+    }
+
+    #arrow_1, #arrow_2, #arrow_3 {
+        height: 90px;
+        left: 50%;
+    }
+
+    #arrow_1, #arrow_3 {
+        transform: translate(-50%, -120px);
+    }
+
+    #arrow_2 {
+        transform: translate(-50%, 50px);
+    }
+
+    .white_block, .colored_block > div {
+        width: auto;
+    }
+    
+    #main_content {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+}

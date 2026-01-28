@@ -1,0 +1,122 @@
+/* 
+    28.03.2022
+*/
+
+.menu {
+    top: 0;
+    /* Общая анимация */
+    will-change: transform;
+    transition: background-color 0.6s cubic-bezier(.62,.18,.9,.42), transform 0.6s cubic-bezier(.51,-0.02,.47,1), box-shadow 0.6s;
+    /* Стили */
+    background-color: #DBE6E0;
+    background-image: url("../Images/System/Noise.png");
+    transform: translateY(-100%);
+    position: fixed;
+    height: calc(var(--vh, 1vh) * 100);
+    width: 100vw;
+    /* Старданты для текста */
+    font-weight: 400;
+    user-select: none;
+}
+
+.menu_show {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    transform: translateY(calc(-100% + 50px));
+    /* transition: transform 0.4s cubic-bezier(.51,-0.02,.47,1); */
+}
+
+.menu_opened {
+    background-color: #8DC9B8;
+    transition: background-color 0.6s , transform 0.85s cubic-bezier(.51,-0.02,.47,1);
+    transform: translateY(0px);
+}
+
+/* Центровка контента */
+.menu_content {
+    margin: calc(var(--vh, 1vh) * 50) auto 0 auto;
+    transform: translateY(-50%); 
+    max-width: 1000px;  
+    width: 80vw;
+}
+
+/* Правный и левый элементы */
+.menu_content > div:nth-child(2n+1) {
+    counter-reset: menu_counter; 
+    display: inline-block;
+    width: 40%;
+}
+
+.menu_content > div:nth-child(2n) {
+    vertical-align: top;
+    display: inline-block;
+    margin-left: 18%;
+    width: 40%;  
+}
+
+/* Основной текст списков */
+.menu_content > div > a {
+    color: #0A0A0A;
+    cursor: pointer;
+    will-change: opacity;
+    transition: color 0.15s;
+    font-size: 32px;
+    line-height: 36px;
+    margin: 20px 0 0 0;
+    display: block;
+    text-decoration: none;
+}
+
+.menu_content > div > a:hover {
+    color:#232F2B;
+}
+
+/* Заголовок раздела */
+.menu_content > div > p {
+    margin: 0;
+    font-size: 22px;
+    line-height: 25px;
+    color: #364E47;
+}
+
+.menu_content > div > p:after {
+    margin-top: 10px;
+    background-color: #364E47;
+    display: block;
+    height: 1px;
+    content: "";
+    width: 100%;
+}
+
+/* Css с классами для анимация: */
+.menu_content > div, .menu > p {
+    transition: opacity 0.6s;
+    will-change: opacity;
+}
+
+.closed_menu_elem {
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+/* Под мобильные устройства */
+@media(max-width: 700px) {
+    .menu_content > div:nth-child(2n) {
+        display: none;
+    }
+
+    .menu_content > div:nth-child(2n + 1) {
+        width: 100%;
+    }
+
+    /* Изменение текста */
+    .menu_content > div > p {
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .menu_content > div > a {
+        font-size: 20px;
+        line-height: 22px;
+        margin: 15px 0 0 0;
+    }
+}

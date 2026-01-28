@@ -1,0 +1,30 @@
+center_content {
+    display: block;
+    margin: 50vh auto 0 auto;
+    transform: translateY(-50%);
+    max-width: 420px;
+    padding: 0 15px 0 15px;
+}
+
+center_content input[type='text'] {
+    width: calc(100% - 20px);
+}
+
+center_content .fast_buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+center_content .fast_buttons > a {
+   padding: 6px;
+   border-radius: 50%;
+   transition: background-color 0.2s;
+   width: 24px;
+   height: 24px;
+}
+
+center_content .fast_buttons > a:hover {
+    background-image: url("../Images/System/Noise.png");
+   background-color: #DBE6E0;
+}

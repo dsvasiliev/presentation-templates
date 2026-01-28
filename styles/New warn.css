@@ -1,0 +1,27 @@
+.NewWarn {
+    display: none;
+    position: absolute;
+    top: 100%;
+    background-color: transparent;
+    border-radius: 5px;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    color: transparent;
+    transition: 0.2s;
+}
+
+.NewWarn > p {
+    margin: 5px 11px 5px 11px;
+    font-size: 18px;
+    line-height: 20px;
+    color: transparent;
+}
+
+.NewWarnOpened {
+    top: 90%;
+    background-color: rgba(120, 120, 120, 0.87);
+}
+
+.NewWarnOpened > p {
+    color: white;
+}

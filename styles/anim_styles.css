@@ -1,0 +1,14 @@
+/* "Вылет" */
+.transformed_elem {
+    transform: translateY(25px);
+    opacity: 0;
+}
+
+.anim_elem, .background_elem, #site_head {
+    transition: 0.4s;
+}
+
+/* Проявление */
+.faded_elem {
+    opacity: 0;
+}

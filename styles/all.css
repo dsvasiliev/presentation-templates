@@ -1,0 +1,58 @@
+html, body {
+    min-width: 250px;
+    margin: 0;
+}
+
+::-webkit-scrollbar {
+    background-color: #171717;
+    width: 10px;
+}
+
+/* ползунок скроллбара */
+::-webkit-scrollbar-thumb {
+    background-color: #575757;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #4b4b4b;
+}
+
+body {
+    background-color: #F2F4F1;
+    /* background-image: url("../Images/Noise.png"); */
+    /* #FED6BC */
+}
+
+p, a, input, select, textarea, h1, h2, h3, h4 {
+    font-family: 'Rubik', sans-serif;
+    color: #0A0A0A;
+    margin: 0;
+    text-decoration: none;
+}
+
+content {
+    display: block;
+    width: 80%;
+    max-width: 1400px;
+    margin: 150px auto 0 auto;
+    padding: 0 25px 80px 25px;
+}
+
+content.short {
+    max-width: 1000px;
+}
+
+/* .user_content - особый класс для content, использующийся на обычных страницах (т.е. не на главной и не на регистрации) */
+.user_content {
+    margin: 140px auto 0 auto;
+}
+
+/* Под мобильные устройства */
+@media (max-width: 700px) {
+    content {
+        width: auto;
+        padding: 0 15px 40px 15px;
+        margin-top: 120px;
+    }
+}

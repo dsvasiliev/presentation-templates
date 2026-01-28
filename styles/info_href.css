@@ -1,0 +1,42 @@
+.info_href {
+    border-radius: 7px;
+    border: 2px solid #A8A8A7;
+    margin: 40px 0;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 550px;
+}
+
+.info_href > svg {
+    animation-duration: 0.4s;
+}
+
+.info_href:hover > svg {
+    animation-name: info_next;
+}
+
+.info_href > div {
+   display: flex;
+   align-items: center;
+}
+
+.info_href > div > p {
+   margin: 0 15px 0 15px;
+   text-align: left;
+}
+
+@keyframes info_next {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(5px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}

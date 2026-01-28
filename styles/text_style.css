@@ -1,0 +1,169 @@
+.big_title {  
+    font-size: 60px;
+    line-height: 78px;
+    font-weight: 700;
+}
+
+.simple_title {
+    font-size: 45px;
+    line-height: 65px;
+    font-weight: 700;
+}
+
+.under_title {
+    text-align: justify;
+    font-size: 22px;
+    margin-top: 0px;
+}
+
+.simple_text, input, select, .simple_href, textarea {
+    display: block;
+    font-size: 20px;
+    line-height: 22px;
+    margin-top: 17px;
+}
+
+.simple_text {
+    text-align: justify;
+}
+
+h4.simple_text {
+   font-size: 22px;
+}
+
+.simple_text > .important, .text_href, .simple_href {
+    color:#215733;
+}
+
+.simple_href {
+    text-decoration: underline;
+}
+
+.subtitle {
+    font-size: 35px;
+    line-height: 39px;
+}
+
+.mark {
+    padding: 2px 40px;
+    margin-left: 25px;
+    display: inline-block;
+    font-size: 25px;
+    line-height: 28px;
+    border: 2px solid #000000;
+    border-radius: 30px;
+}
+
+.text_href {
+    text-decoration: underline;
+}
+
+.button {
+    cursor: pointer;
+    transition: background 0.2s;
+    margin: 30px auto 0 auto;
+    padding: 0 24px 0 24px;
+    display: table;
+    background: #0A0A0A;
+    border-radius: 7px;
+    border: 2px solid #0A0A0A;
+}
+
+.button:hover {
+    background: #272727;
+    border: 2px solid #272727;
+}
+
+.button.left {
+    margin-left: 0;
+    margin-top: 14px;
+}
+
+.button.light {
+    background-color: transparent;
+}
+
+.button.light:hover {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.button.green > p {
+   color: #DBE6E0;
+}
+
+.button.light > p {
+   color: #0A0A0A;
+   font-weight: 700;
+}
+
+.button p, .button svg {
+    vertical-align: middle;
+    margin: 10px 0px;
+    display: inline-block;
+}
+
+.button p {
+    padding: 0 16px;
+    font-size: 18px;
+    line-height: 22px;
+    color: #F2F4F1;
+}
+
+.small_text {
+    font-size: 16px;
+}
+
+.center {
+    text-align: center;
+}
+
+.indent {
+    margin-left: 35px;
+}
+
+.selected {
+    margin-bottom: 25px;
+}
+
+/* Мобильные устройства */
+@media(max-width: 700px) {
+    .big_title {  
+        font-size: 35px;
+        line-height: 45px;
+    }
+
+    .simple_title {
+        font-size: 30px;
+        line-height: 35px;
+    }
+    
+    .under_title {
+        font-size: 18px;
+        margin-top: 6px;
+    }
+
+    .simple_text, .button p, .simple_href {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .simple_href {
+        text-align: center;
+    }
+
+    h4.simple_text {
+        font-size: 18px;
+    }
+
+    .button {
+        padding: 0 15px 0 15px;
+    }
+
+    .button > svg {
+        height: 18px;
+    }
+
+    .button.left {
+        margin: 14px auto 0 auto;
+    }
+}

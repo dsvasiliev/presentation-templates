@@ -1,0 +1,136 @@
+input {
+    outline: none;
+}
+
+input, .file_upload {
+    transition: border 0.4s;
+}
+
+input[type='text'], textarea {
+    margin-top: 21px;
+    border: 3px solid #0A0A0A;
+    border-radius: 7px;
+    list-style: none;
+    background-color: transparent;
+    padding: 7px;
+}
+
+input[type='text']::placeholder {
+    color: #625A56;
+}
+
+input[type='file'] {
+    display: none;
+}
+
+/* Работа с полем для загрузки */
+.file_upload, .list {
+    margin-top: 17px;
+    max-width: 500px;
+    border: 3px solid #0A0A0A;
+    border-radius: 7px;
+}
+
+.file_upload > p {
+    text-decoration: underline;
+    cursor: pointer;
+    margin: 25px 0 15px 0;
+}
+
+.file_upload > p:first-of-type {
+    text-decoration: none;
+    overflow-wrap: break-word;
+    color: #625A56;
+    cursor: default;
+}
+
+.file_upload > p {
+    text-align: center;
+    user-select: none;
+}
+
+.false_selected, input[type='text'].false_selected {
+    border: 3px solid #F12D2D;
+}
+
+/* Работа со списками */
+.list {
+    padding: 7px;
+    max-height: 120px;
+    overflow: auto;
+}
+
+.list > p {
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 0.2s;
+    border-radius: 5px;
+    margin-top: 0px;
+    padding: 7px;
+}
+
+.list > p:first-of-type {
+    color: #625A56;
+}
+
+.list_selected {
+    background-color: #50A971;
+}
+
+/* Input type range */
+.range {
+    display: flex;
+}
+
+.range > p {
+    margin-left: 15px;
+}
+
+input[type=range]  {
+    width: 200px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: transparent;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    box-sizing: border-box;
+    border-radius: 5px;
+    height: 10px;
+    border: 2px solid #0A0A0A;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    background: #0A0A0A;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    appearance: none;
+    margin-top: -7px;
+}
+
+input[type=range]::-moz-range-track {
+    box-sizing: border-box;
+    border-radius: 5px;
+    height: 10px;
+    border: 2px solid #0A0A0A;
+}
+
+input[type=range]::-moz-range-thumb {
+    background: #0A0A0A;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    appearance: none;
+    margin-top: -7px;
+}
+
+textarea {
+    /* Ширина с учётом внутренних отступов */
+    width: calc(100% - 20px);
+    resize: none;
+    height: 100px;
+}

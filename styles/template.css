@@ -1,0 +1,87 @@
+.template_container {
+    margin: 42px 0 0 0;
+    display: flex;
+}
+
+.simple_title.margin {
+    margin-top: 70px;
+}
+
+.template_container > div {
+    width: 50%;
+}
+
+.template_container > div:first-of-type {
+    max-height: 430px;
+}
+
+.template_container > div:first-of-type > img {
+   max-width: calc(100% - 6px);
+   max-height: calc(100% - 6px);
+   border: 3px solid #000000;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+}
+
+.template_information {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 50px;
+}
+
+.template_information > div:first-of-type > h4:first-of-type {
+    margin-top: 0;
+    text-decoration: underline;
+}
+
+.information_data {
+    max-width: 500px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.information_data:first-of-type > p {
+    margin-top: 15px;
+}
+
+.information_data > p {
+    margin-top: 7px;
+}
+
+.template_information > div:last-of-type > a, #download {
+    display: inline-block;
+}
+
+.template_information > div:last-of-type > a:last-of-type {
+    margin-left: 20px;
+}
+
+@media (max-width: 1210px) {
+    .template_container {
+        display: block;
+    }
+
+    .template_container > div {
+        width: 100%;
+    }
+
+    .template_container > div:first-of-type > img {
+        max-height: max(30vh, 250px);
+    }
+
+    .template_container > div:last-of-type {
+        margin: 40px 0 0 0;
+    }
+}
+
+@media (max-width: 500px) {   
+    .template_information > div:last-of-type > a {
+        display: table;
+    }
+
+    .template_information > div:last-of-type > a:last-of-type {
+        display: none;
+    }
+}

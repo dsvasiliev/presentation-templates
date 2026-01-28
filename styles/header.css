@@ -1,0 +1,64 @@
+.menu_top {
+    transition: transform 0.4s;
+    position: fixed;
+    top: 20px;
+    left: 50px;
+    right: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu_top > div {
+    transition: opacity 0.4s;
+    display: flex;
+    align-items: center
+}
+
+.menu_top > div > a {
+    font-size: 20px;
+    line-height: 26px;
+    text-decoration: none;
+    margin: 0 18px;
+}
+
+/* Анимация иконки */
+
+.menu_top > svg > path {
+    transition: transform 0.4s, fill 0.4s;
+    transform-origin: center center;
+    will-change: transform;
+}
+
+/* Верхняя полоска */
+.opened_menu_icon > path:first-of-type {
+    transform: rotate(-45deg) translateY(6px);
+}
+
+.opened_menu_icon > path:last-of-type {
+    transform: rotate(45deg) translateY(-5px);
+}
+
+/* Уменьшение размеров шапеи сайта */
+.short_head {
+    transform: translateY(-13px) translateZ(0px);
+}
+
+.white_colored > p {
+    color: #FED6BC
+}
+
+.white_colored > svg > rect {
+    fill: #FED6BC
+}
+
+/* Под мобильные устройства */
+@media (max-width: 700px) {
+    .menu_top {
+        left: 25px;
+        right: 25px;
+    }
+
+    .menu_top > div {
+        display: none;
+    }
+}

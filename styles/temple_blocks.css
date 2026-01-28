@@ -1,0 +1,40 @@
+.template_block {
+    width: 29%; /* При использовании блока content */
+    display: inline-block;
+    margin: 50px 1% 0 1%;
+    transition: box-shadow 0.2s, opacity 0.4s, transform 0.4s;
+    position: relative;
+}
+
+.template_block > div > p {
+    font-size: 35px;
+    line-height: 39px;
+    color: #0A0A0A;
+    margin-top: 20%;
+}
+
+.template_block > img {
+    border-radius: 10px;
+    aspect-ratio: 16/9; /* Соотношение сторон */
+    border: 3px solid #000000;
+    height: calc(100% - 6px); /* т.к border 3+3 */
+    width: calc(100% - 6px);
+}
+
+.template_block:hover > img {
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.25);
+}
+
+@media(max-width: 900px) {
+    .template_block {
+        width: 42%;
+        margin: 50px 3% 0 3%;
+    }
+}
+
+@media(max-width: 600px) {
+    .template_block {
+        width: 100%;
+        margin: 50px 0 0 0;
+    }
+}

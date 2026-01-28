@@ -1,0 +1,76 @@
+.review {
+    border: 2px solid #B0B0AF;
+    border-radius: 7px;
+    padding: 10px 15px 15px 15px;
+    max-width: 950px;
+    margin-top: 20px;
+}
+
+.review > p {
+    margin-top: 13px;
+}
+
+.review.green {
+    border-color: #3D917C;
+}
+
+.review.yellow {
+    border-color: #E9C896;
+}
+
+.review.margin {
+    margin-top: 50px;
+}
+
+.review_top h4, .review_top p {
+    margin: 0;
+}
+
+.review_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+}
+
+.review_top > div {
+    display: flex;
+    align-items: center;
+}
+
+.review_top > div > p {
+    margin-left: 20px;
+}
+
+.review_buttons {
+    display: table;
+}
+
+.review_buttons > a{
+    display: inline-block;
+}
+
+.review_buttons > a:last-of-type {
+    margin-left: 15px;
+}
+
+@media (max-width: 450px) {   
+    .review_buttons > a > p {
+        display:none;
+    }
+
+    .review_buttons > a:last-of-type {
+        margin-left: 15px;
+    }
+
+    .review_buttons {
+        margin: 0 auto;
+    }
+
+    .review_top > div {
+        display: block;
+    }
+
+    .review_top > div > p {
+        margin-left: 0;
+    }
+}
